@@ -1,0 +1,39 @@
+baseURL: 'http://localhost:1313/'
+languageCode: 'en'
+title: 'Engineer Angler blog'
+languageName: 'Japanese'
+defaultContentLanguage: 'ja'
+hasCJKLanguage: true
+theme: 'hugo-theme-stack'
+
+params:
+  description: '技術を中心に釣りの話も'
+  mainSections:
+    - 'articles'
+  sidebar:
+      compact: true
+      subtitle: '技術を中心に釣りの話も'
+      avatar:
+        enabled: true
+        src: 'img/avatar.jpg'
+  footer:
+    since: 2026
+  article:
+      headingAnchor: true
+      toc: true
+
+menu:
+    main:
+      - name: 'menu title'
+        weight: -90
+    social:
+      - identifier: github
+        name: GitHub
+        url: https://github.com/gal1996
+        params:
+          icon: brand-github
+      - identifier: X
+        name: X
+        url: https://x.com/prooooograming
+        params:
+          icon: brand-X
