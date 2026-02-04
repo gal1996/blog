@@ -11,7 +11,7 @@ params:
   mainSections:
     - 'articles'
   sidebar:
-      compact: true
+      compact: false
       subtitle: '技術を中心に釣りの話も'
       avatar:
         enabled: true
@@ -21,11 +21,22 @@ params:
   article:
       headingAnchor: true
       toc: true
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 15
+    page:
+      - type: toc
 
 menu:
-    main:
-      - name: 'menu title'
-        weight: -90
     social:
       - identifier: github
         name: GitHub
